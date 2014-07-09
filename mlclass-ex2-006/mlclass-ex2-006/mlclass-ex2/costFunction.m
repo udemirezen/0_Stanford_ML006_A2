@@ -26,7 +26,7 @@ for i = 1:1:m
     
     s =  sigmoid(theta'*X(i,:)');  
          ss = ss + (-1/m)* (y(i)*log(s) + (1-y(i))*log(1-s));
-          gg = gg + (1/1)*(s-y(i))*X(i,:)';
+          gg = gg + (1/m)*(s-y(i))*X(i,:)';
  
 end
 J=ss;
